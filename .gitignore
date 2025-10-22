@@ -1,0 +1,24 @@
+# Arquivos compilados Java
+*.class
+
+# Arquivos de pacote
+*.jar
+*.war
+*.ear
+
+# Arquivos do IDE
+.vscode/
+.idea/
+*.iml
+
+# Arquivos de log
+*.log
+
+# Arquivos temporarios
+*.tmp
+*.temp
+
+
+EXEMPLOS_USO.txt
+GUIA_RAPIDO.txt
+ESTRUTURA_PROJETO.txt
