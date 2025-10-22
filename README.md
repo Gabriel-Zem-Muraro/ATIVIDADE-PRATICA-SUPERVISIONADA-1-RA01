@@ -4,10 +4,10 @@ Sistema desenvolvido em Java que simula gerenciamento de atendimento ao cliente 
 
 ## Informações do projeto
 
-Disciplina: Resolução de Problemas Estruturados em Computação (Turma 4º U)
-Curso: Ciência da Computação (Noite) - 2025 / 2º Semestre
-Professor: Andrey Cabral
-Alunos: João Pedro Bezerra e Gabriel Zem Muraro
+**Disciplina:** Resolução de Problemas Estruturados em Computação (Turma 4º U)  
+**Curso:** Ciência da Computação (Noite) - 2025 / 2º Semestre  
+**Professor:** Andrey Cabral  
+**Alunos:** João Pedro Bezerra e Gabriel Zem Muraro  
 
 ---
 
