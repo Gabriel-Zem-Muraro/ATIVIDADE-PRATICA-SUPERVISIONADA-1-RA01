@@ -7,7 +7,7 @@ public class Fila {
         this.tras = null;
     }
 
-    public void enqueue(Elemento elemento) {
+    public void addFila(Elemento elemento) {
         Node novoNode = new Node(elemento);
         
         if (estaVazia()) {
@@ -19,7 +19,7 @@ public class Fila {
         }
     }
 
-    public Elemento dequeue() throws Exception {
+    public Elemento remFila() throws Exception {
         if (estaVazia()) {
             throw new Exception("Fila vazia! Nao ha clientes para atender.");
         }
@@ -38,7 +38,7 @@ public class Fila {
         return frente == null;
     }
 
-    public String listar() {
+    public String listarFila() {
         if (estaVazia()) {
             return "Fila vazia!";
         }

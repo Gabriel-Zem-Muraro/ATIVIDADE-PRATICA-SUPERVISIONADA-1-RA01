@@ -140,7 +140,7 @@ public class Main {
         String dataHora = leitor.readLine();
         
         Elemento elemento = new Elemento(id, descricao, dataHora);
-        pilhaHistorico.push(elemento);
+        pilhaHistorico.addPilha(elemento);
         
         System.out.println("\nSolicitacao adicionada a pilha");
     }
@@ -152,7 +152,7 @@ public class Main {
         }
 
         try {
-            Elemento removido = pilhaHistorico.pop();
+            Elemento removido = pilhaHistorico.remPilha();
             System.out.println("\nSolicitacao removida da pilha");
             System.out.println(removido.paraString());
         } catch (Exception e) {
@@ -161,7 +161,7 @@ public class Main {
     }
 
     private static void visualizarHistorico() {
-        System.out.println(pilhaHistorico.listar());
+        System.out.println(pilhaHistorico.listarPilha());
     }
 
     private static void adicionarCliente(BufferedReader leitor) throws Exception {
@@ -177,7 +177,7 @@ public class Main {
         String motivo = leitor.readLine();
         
         Elemento elemento = new Elemento(id, nome, motivo);
-        filaAtendimento.enqueue(elemento);
+        filaAtendimento.addFila(elemento);
         
         System.out.println("\nCliente adicionado a fila");
     }
@@ -189,7 +189,7 @@ public class Main {
         }
 
         try {
-            Elemento atendido = filaAtendimento.dequeue();
+            Elemento atendido = filaAtendimento.remFila();
             System.out.println("\nCliente atendido:");
             System.out.println(atendido.paraString());
         } catch (Exception e) {
@@ -198,7 +198,7 @@ public class Main {
     }
 
     private static void visualizarFila() {
-        System.out.println(filaAtendimento.listar());
+        System.out.println(filaAtendimento.listarFila());
     }
 
     private static void carregarDados() {
@@ -223,7 +223,7 @@ public class Main {
                     
                     if (id.length() > 0) {
                         Elemento elemento = new Elemento(id, descricao, dataHora);
-                        pilhaHistorico.push(elemento);
+                        pilhaHistorico.addPilha(elemento);
                     }
                 }
             }
@@ -247,7 +247,7 @@ public class Main {
                     
                     if (id.length() > 0) {
                         Elemento elemento = new Elemento(id, nome, motivo);
-                        filaAtendimento.enqueue(elemento);
+                        filaAtendimento.addFila(elemento);
                     }
                 }
             }

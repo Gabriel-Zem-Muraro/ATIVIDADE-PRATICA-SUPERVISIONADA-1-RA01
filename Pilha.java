@@ -5,13 +5,13 @@ public class Pilha {
         this.topo = null;
     }
 
-    public void push(Elemento elemento) {
+    public void addPilha(Elemento elemento) {
         Node novoNode = new Node(elemento);
         novoNode.setProximo(topo);
         topo = novoNode;
     }
 
-    public Elemento pop() throws Exception {
+    public Elemento remPilha() throws Exception {
         if (estaVazia()) {
             throw new Exception("Pilha vazia! Nao ha elementos para remover.");
         }
@@ -24,7 +24,7 @@ public class Pilha {
         return topo == null;
     }
 
-    public String listar() {
+    public String listarPilha() {
         if (estaVazia()) {
             return "Pilha vazia!";
         }
@@ -32,7 +32,7 @@ public class Pilha {
         int total = contarElementos();
         String resultado = "\n========== HISTORICO (PILHA) ==========\n";
         
-        String listaInvertida = inverterParaVisualizacao(topo, total, total);
+        String listaInvertida = inverterPilha(topo, total, total);
         resultado = resultado + listaInvertida;
         
         resultado = resultado + "========================================================\n";
@@ -40,12 +40,12 @@ public class Pilha {
         return resultado;
     }
     
-    private String inverterParaVisualizacao(Node node, int posicaoAtual, int total) {
+    private String inverterPilha(Node node, int posicaoAtual, int total) {
         if (node == null) {
             return "";
         }
         
-        String proximasLinhas = inverterParaVisualizacao(node.getProximo(), posicaoAtual - 1, total);
+        String proximasLinhas = inverterPilha(node.getProximo(), posicaoAtual - 1, total);
         
         String linhaAtual = "[" + posicaoAtual + "] " + node.getDado().paraString();
         
