@@ -2,6 +2,13 @@
 
 Sistema desenvolvido em Java que simula gerenciamento de atendimento ao cliente utilizando Pilha e Fila implementadas com listas encadeadas.
 
+## Informações do projeto
+
+Disciplina: Resolução de Problemas Estruturados em Computação (Turma 4º U)
+Curso: Ciência da Computação (Noite) - 2025 / 2º Semestre
+Professor: Andrey Cabral
+Alunos: João Pedro Bezerra e Gabriel Zem Muraro
+
 ---
 
 ## Descricao
